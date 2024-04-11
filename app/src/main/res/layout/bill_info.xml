@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_height="fill_parent"
+        android:layout_width="fill_parent" android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/TextBillNo"
+                android:layout_width="match_parent"
+                android:layout_gravity="left"
+                android:hint="Enter Bill No"
+                android:inputType="number"
+                android:textSize="18dip"
+                android:layout_height="match_parent"
+                android:padding="10px"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/billDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/listBillLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.25"
+            android:clickable="true"
+            android:padding="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:stretchColumns="*">
+
+
+            <TableRow
+                android:id="@+id/table1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Products"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20dip" />
+
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Quantity"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20dip" />
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GrandTotal2"
+            android:textSize="20dip"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/exitBillPrint"
+                android:background="@drawable/btn_add"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:text="Print"
+                android:layout_margin="10dp"
+                android:onClick="exitBillInfo"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/exitBill"
+                android:background="@drawable/btn_add"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="Exit"
+                android:layout_margin="10dp"
+                android:onClick="exitBillInfo"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

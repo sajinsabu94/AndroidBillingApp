@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/textView10"
+            android:text="Scan your Code"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editBillQR"
+        android:hint="QR"
+        android:inputType="number"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+    <AutoCompleteTextView
+        android:id="@+id/editBillName"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent" />
+    <EditText
+        android:id="@+id/editBillRate"
+        android:hint="Purchase Rate"
+        android:inputType="numberDecimal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+    <EditText
+        android:id="@+id/editBillRateRetail"
+        android:hint="Retail Rate"
+        android:inputType="numberDecimal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+    <EditText
+        android:id="@+id/editBillQty"
+        android:hint="Quantity"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/textView12"
+            android:text="Total"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:text="0.00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/buttonCancel"
+            android:text="Cancel"
+            android:onClick="cancelScan"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/addCartbtn"
+            android:onClick="addCartProceed"
+            android:text="Add"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

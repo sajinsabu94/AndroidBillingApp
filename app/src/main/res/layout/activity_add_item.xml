@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:weightSum="9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/textScan"
+            android:text="Scan your Code"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <SurfaceView
+            android:id="@+id/surfaceViewAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextQR"
+        android:hint="QR ID"
+        android:inputType="number"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        />
+
+    <EditText
+        android:id="@+id/editTextRate"
+        android:hint="Purchase Rate"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+    <EditText
+        android:id="@+id/editTextRateWhole"
+        android:hint="Wholesale Rate"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+    <EditText
+        android:id="@+id/editTextRateRetail"
+        android:hint="Retail Rate"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/removeItemDBBtn"
+            android:text="Remove Item"
+            android:onClick="removeItemFromDB"
+            android:background="@drawable/btn_add"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/addItemDBBtn"
+            android:text="Add Item"
+            android:onClick="addItemToDB"
+            android:background="@drawable/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

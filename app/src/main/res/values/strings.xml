@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MA Store</string>
+    <string name="msg_getpermission">obtaining USB device access permissions success</string>
+    <string name="msg_conn_state">USB device can not access, please re-connect</string>
+</resources>

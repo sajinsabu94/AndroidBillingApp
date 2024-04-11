@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_height="fill_parent"
+        android:layout_width="fill_parent" android:background="@android:color/white">
+
+        <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="24dip"
+        android:layout_margin="5dip"
+        android:layout_gravity="center"
+        android:text="Shopping Cart"
+        >
+    </TextView>
+
+        <TextView
+            android:id="@+id/billInfoNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dip"
+            android:background="@android:color/white"
+            android:text="Bill No:"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18dip"></TextView>
+
+
+        <TableLayout
+            android:layout_marginTop="16dp"
+            android:id="@+id/myTableBillLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:stretchColumns="*"
+            android:padding="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:clickable="true">
+
+
+            <TableRow
+                android:id="@+id/tablerow1"
+                android:layout_width="fill_parent"
+                android:isScrollContainer="true"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Products"
+                    android:textSize="20dip"
+                    android:background="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:textSize="20dip"
+                    android:background="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textSize="20dip"
+                    android:background="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"/>
+
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="20dip"
+                    android:background="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"/>
+
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GrandTotal"
+            android:textSize="20dip"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dip"
+            android:text="Amount Payable : "
+            android:layout_marginRight="20dp"
+            android:background="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GrandTotalPayable"
+            android:textSize="20dip"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/ButtonCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:text="Checkout"
+                android:background="@drawable/btn_add"
+                android:layout_gravity="center"
+                >
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
